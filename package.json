@@ -1,0 +1,22 @@
+{
+  "name": "pretty-kitty",
+  "version": "0.0.0",
+  "description": "Starcats LED signage",
+  "main": "main.js",
+  "scripts": {
+    "start": "node_modules/.bin/nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gschmidt/pretty-kitty.git"
+  },
+  "author": "",
+  "license": "NONE",
+  "bugs": {
+    "url": "https://github.com/gschmidt/pretty-kitty/issues"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
