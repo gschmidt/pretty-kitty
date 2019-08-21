@@ -12,7 +12,7 @@ function draw(client) {
 
        // Get an (x,y) coordinate for this pixel.
        //   * y goes from 0.0 at the top to 1.0 at the bottom
-       //   * x goes from tip to tail (0.0 near the cat’s nose, 1.1 near the
+       //   * x goes from tip to tail (0.0 near the cat’s nose, 1.0 near the
        //     tail)
        //
        // The physical scale is meters. 1 unit of distance = 1 meter.
@@ -27,7 +27,7 @@ function draw(client) {
        // A simple rainbow fade
        // (this is the actual pattern – put your code here!)
        let t = secs - x - y * 2;
-       let [red, green, blue] = hsv(Math.sin(t)/2 + .5, 1,
+       let [red, green, blue] = hsv(Math.sin(t) / 2 + .5, 1,
                                     Math.sin(t) / 2 + .5);
 
        // Save the computed pixel value in a buffer
