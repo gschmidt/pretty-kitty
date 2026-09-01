@@ -4,7 +4,7 @@
   "description": "Starcats LED signage",
   "main": "main.js",
   "scripts": {
-    "start": "node_modules/.bin/nodemon main.js",
+    "start": "node_modules/.bin/nodemon e131-relay.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +18,8 @@
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "e131": "^1.1.3"
   }
 }
