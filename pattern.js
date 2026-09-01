@@ -26,7 +26,8 @@ function draw(client) {
          
        // A simple rainbow fade
        // (this is the actual pattern – put your code here!)
-       let t = secs - x - y * 2;
+//       let t = secs - x * cat - y * (1-cat);
+       let t = secs - x * 2 - y
        let [red, green, blue] = hsv(Math.sin(t)/2 + .5, 1,
                                     Math.sin(t) / 2 + .5);
 
