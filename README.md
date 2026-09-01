@@ -57,7 +57,9 @@ Run `tar xzvf fcserver-1.02.tar.gz`
 If you changed the path, edit `startup-root.sh` and `startup.sh`.
 
 Add the following to the end of `/etc/rc.local`:
-`su -c /home/starcats/co/pretty-kitty/startup-root.sh`
-`su starcats -c /home/starcats/co/pretty-kitty/startup.sh`
+```
+su -c /home/starcats/co/pretty-kitty/startup-root.sh
+su starcats -c /home/starcats/co/pretty-kitty/startup.sh
+```
 
-If no pixel data appears when you send E131 data, edit `e131-relay.js` and change `opcPixelOffset` from `0` to `numPixels`. (One sign needs this to be 0 and the other needs it to be `opcPixelOffset`, and which is which depends on the serial number of the Fadecandy board. I don't want to take playa time to fix this but you could if you really cared, or you could just change the value in the sign that doesn't show your data and call it a day.) For what it's worth, the sign with Fadecandy serial number FXAUNHWSXFCUQSNP is the one that should be `0` and the other one should be `numPixels`.
+If no pixel data appears when you send E131 data, edit `e131-relay.js` and change `opcPixelOffset` from `0` to `numPixels`. (One sign needs this to be 0 and the other needs it to be `opcPixelOffset`, and which is which depends on the serial number of the Fadecandy board. I don't want to take playa time to fix this but you could if you really cared, or you could just change the value in the sign that doesn't show your data and call it a day.) For what it's worth, the sign with Fadecandy serial number FXAUNHWSXFCUQSNP, that does NOT have a sticker with wifi/ssh information on the back, is the one that should have `0`; and the other one with the wifi/ssh sticker, and Fadecandy serial number UEKDMEUYIGFAGIXF, should have `numPixels`.
