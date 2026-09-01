@@ -17,7 +17,7 @@
     "url": "https://github.com/gschmidt/pretty-kitty/issues"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^3.1.14"
   },
   "dependencies": {
     "e131": "^1.1.3"
